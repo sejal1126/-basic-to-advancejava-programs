@@ -1,0 +1,18 @@
+class test extends Thread
+{
+  public void run()
+  {
+    int i=0;
+    for(i=0;i<10;i++)
+    {System.out.println("hello sejal!!");
+  }
+  }
+}
+class Main {
+  public static void main(String[] args) {
+    test t = new test();
+    t.start();
+    System.out.println("hello world!!");
+    System.out.println("hello java!!");
+  }
+}
