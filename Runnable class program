@@ -1,0 +1,25 @@
+class Main implements Runnable{
+   public void run()
+    {
+    int i=0;
+    while(i<10)
+    {
+      System.out.println(i+"hello world!!");
+      i++;
+    }
+    }
+  
+  public static void main(String args[])
+  {
+    int i=0;
+    Main m = new Main();
+    Thread t = new Thread(m);
+    t.start();
+    i=0;
+    while(i<10)
+    {
+      System.out.println(i+"hello sejal!!");
+      i++;
+    }
+  }
+}
